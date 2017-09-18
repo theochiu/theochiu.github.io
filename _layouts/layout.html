@@ -10,7 +10,7 @@
     <link rel="favicon" href="{{ site.baseurl }}static/img/favicon.ico">
 -->
 
-    <link href="{{ site.baseurl }}static/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="{{ site.baseurl }}static/img/favicon-96x96.png" rel="shortcut icon" type="image/x-icon" />
 
 
     {% if page.title %}
@@ -32,10 +32,20 @@
     <![endif]-->
 
 	<!-- Custom styles for this template -->
+
+  <!-- This was without SCSS
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/syntax.css" />
+  -->
+
+  <!-- Testing this SCSS alternative (line below) maybe it'll work? -->
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/syntax.css" />
+  
 
     <!-- Google Analytics -->
     {% include analytics.html %}
