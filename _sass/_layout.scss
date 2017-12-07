@@ -29,8 +29,8 @@ html, body {
 }
 
 .navbar-default {
-  background-color: $grey-background;
-  border-color: $grey-background;
+  background-color: #fff;
+  
   /* not white */
   .navbar-brand {
     color: #6b6b6b;
@@ -67,7 +67,7 @@ html, body {
     }
   }
   .navbar-toggle {
-    border-color: $grey-background;
+    border-color: #FFF;
     &:hover, &:focus {
       background-color: $grey-background;
     }
@@ -76,7 +76,7 @@ html, body {
     }
   }
   .navbar-collapse, .navbar-form {
-    border-color: #6b6b6b;
+    border-color: #FFF;
   }
   .navbar-link {
     color: #6b6b6b;
