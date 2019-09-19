@@ -1,17 +1,45 @@
 ---
-layout: home
+layout: default
+background: '/static/pagepics/snowy_ece.jpg'
 ---
-<section id="about">
-	<div class="container">
-	  <div class="avatar">
-		<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image">
-	  </div>
-	  <h3>I'm <strong>{{ site.author }}</strong>, a Computer Engineer.</h3>
-	  <h3>I love engineering, music, and cars.</h3>
-	  <h3>Have a look at some of my working <a href="{{ site.baseurl }}projects.html"> projects</a>.</h3>
-	  <h3>For more check out my academic &amp; professional <a href="{{ site.baseurl }}resume.pdf" target="_blank">Resume</a>.</h3>
-	  <h3>Shoot me an <a href="mailto:{{ site.email }}" >email</a> anytime!</h3>
-	  {% include social.html %}
-	</div>
-</section>
- 
+
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="margin-bottom: 0px; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+
+	{% else %}
+	<header class="masthead">
+		{% endif %}
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<div class="page-heading" style="padding: 60px;">
+						<h1>Theodore Chiu</h1>
+
+						<img style="border-radius: 60%; width: 90%; max-width: 400px;" src="static/githubprof.jpg" alt="Responsive image">
+
+						<span class="subheading">
+							<p >
+							<mark style="background-color: #6ba3db; color: white;">
+								I'm <strong>Theodore Chiu</strong>, a Computer Engineer.
+								<br>
+								I love engineering, music, and cars.
+								<br>
+								Have a look at some of my working <a href="projects.html"> projects</a>.
+								<br>
+								For more check out my academic &amp; professional <a href="resume.pdf" target="_blank">Resume</a>.
+								<br>
+								Shoot me an <a href="mailto:{{ site.email }}" >email</a> anytime!
+							</mark>
+							</p>
+
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	

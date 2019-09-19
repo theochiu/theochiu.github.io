@@ -10,7 +10,7 @@ author: "Theodore Chiu"
 I've been at Purdue a couple months, and today was the first day of 20 degree weather. There are many things in Indiana which sharply contrast life in Cali. I've grown up in California all my life, and being out here in Indiana really puts into perspective my experience of home. The twisting mountains, flowing valleys and tropical Mediterranean climate are just a few of things I will never find in Indiana. 
 
 
-<img class="img-fluid" src="/static/posts/foothillspark.jpg" alt="Demo Image">
+<img class="img-fluid" src="{{ "/static/posts/foothillspark.jpg" | relative_url}}" alt="Demo Image">
 <span class="caption text-muted">Foothills Park in Los Altos Hills </span>
 
 ## Topography
