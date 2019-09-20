@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Startup Life"
-date:   2019-07-11 
-background: ''
+date:   2019-07-11
+background: '/static/posts/heroes.jpg'
 author: "Theodore Chiu"
 ---
 
@@ -27,6 +27,11 @@ For example, at [Heroes](#) we each took turns cooking for a team lunch on Wedne
 on Fridays. But by and far what marked the startup was how agile and fast development was on projects, and how much attention you
 received from executives. 
 
+<a href="{{ "/static/posts/crepe.gif" | relative_url}}">
+<img style="max-width: 40%;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/crepe.gif" | relative_url}}" alt="Demo Image">
+</a>
+<span class="caption text-muted">CFO or professional chef?</span>
+
 Even as an intern what I did had **very direct** results for the company. As such, the CEO although he was not technical (economics and finance major)
 was very interested in my ideas and my work. Working with such a small team, we all shared the same table and it was easy to see what everyone 
 brought to the company, I could look over and see what my coworkers were working on, and "meetings" were usually just discussion between
@@ -47,3 +52,8 @@ longer days than some of my friends. For example, to me a regular day looked lik
 3:00 | look for platforms to expand to
 7:00 | go home
 
+
+<a href="{{ "/static/posts/latte.jpg" | relative_url}}">
+<img style="max-width: 40%;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/latte.jpg" | relative_url}}" alt="Demo Image">
+</a>
+<span class="caption text-muted">my latté</span>
