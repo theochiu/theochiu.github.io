@@ -28,7 +28,7 @@ on Fridays. But by and far what marked the startup was how agile and fast develo
 received from executives. 
 
 <a href="{{ "/static/posts/crepe.gif" | relative_url}}">
-<img style="max-width: 40%;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/crepe.gif" | relative_url}}" alt="Demo Image">
+<img style="max-height: 550px;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/crepe.gif" | relative_url}}" alt="Demo Image">
 </a>
 <span class="caption text-muted">CFO or professional chef?</span>
 
@@ -54,6 +54,6 @@ longer days than some of my friends. For example, to me a regular day looked lik
 
 
 <a href="{{ "/static/posts/latte.jpg" | relative_url}}">
-<img style="max-width: 40%;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/latte.jpg" | relative_url}}" alt="Demo Image">
+<img style="max-height: 550px;margin-left: auto;display: block;margin-right: auto;" src="{{ "/static/posts/latte.jpg" | relative_url}}" alt="Demo Image">
 </a>
 <span class="caption text-muted">my latté</span>
