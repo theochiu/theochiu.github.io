@@ -1,5 +1,5 @@
 from pprint import pprint
-import os
+import os, shutil
 
 PAGE_SIZE = 5
 IMG_EXT = [".gif", ".jpg", ".jpeg", ".png", ".bmp"]
@@ -16,15 +16,17 @@ def get_pics(path):
 	# pprint(files)
 	return files[::-1]
 
-def make_html(path, dest):
+def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 	files = get_pics(path)
 
-	# check if folder exists, if not make it
-	if not os.path.isdir(dest):
+	if os.path.isdir(dest):
+		shutil.rmtree(dest)
+		os.mkdir(dest)
+	else:
 		os.mkdir(dest)
 
 	# where i is the markdown page we're on
-	for i in range(1, len(files) // PAGE_SIZE + 2):
+	for i in range(1, len(files) // PAGE_SIZE + 1):
 		if os.path.exists("page".format(i)): continue
 
 		f = open(dest+"/page{}.md".format(i), "w")
@@ -32,14 +34,15 @@ def make_html(path, dest):
 		f.write("---\n")
 		f.write('layout: post\n')
 		f.write('title:  "Page {}"\n'.format(i))
-		f.write("background: '/static/pagepics/beach_cam.jpg'\n")
+		f.write("background: '"+background+"'\n")
 		f.write('author: "Theodore Chiu"\n')
+		f.write("order: {}\n".format(i))
 		f.write("---\n\n")
 
 		# where j is the index of the image to write to the page
 		for j in range((i-1) * PAGE_SIZE, -1+(i-1) * PAGE_SIZE + PAGE_SIZE):
 			if j >= len(files): continue
-			print(j)
+			# print(j)
 			f.write('<a href="{{ "'+files[j]+'" | relative_url}}">\n')
 			f.write('\t<img class="img-fluid" src="{{ "' +files[j]+'" | relative_url}}" alt="Demo Image">\n')
 			f.write('</a>\n\n')
@@ -50,6 +53,7 @@ def make_html(path, dest):
 
 if __name__ == '__main__':
 	make_html("static/pics", "_pictures")
-	make_html("static/zuko", "_zuko_pics")
-	# make_html("static/car_pics")
+	make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
+	make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
+	print("success")
 	# pprint(get_pics("static/zuko"))
