@@ -34,6 +34,6 @@ when falling to optimize the car to be less air resistant.
 
 #### Photography
 
-I've been really getting into photography lately, hopefully I'll have more to post
-and add later :)
+I've been really getting into [photography]({{ site.baseurl }}/pictures) lately, hopefully I'll have more to post
+and add later :) 
 
