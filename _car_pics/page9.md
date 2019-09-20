@@ -22,3 +22,7 @@ order: 9
 	<img class="img-fluid" src="{{ "static/car_pics/IMG_6605.JPG" | relative_url}}" alt="Demo Image">
 </a>
 
+<a href="{{ "static/car_pics/IMG_6604.JPG" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/car_pics/IMG_6604.JPG" | relative_url}}" alt="Demo Image">
+</a>
+

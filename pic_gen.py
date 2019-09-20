@@ -26,8 +26,7 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 		os.mkdir(dest)
 
 	# where i is the markdown page we're on
-	for i in range(1, len(files) // PAGE_SIZE + 1):
-		if os.path.exists("page".format(i)): continue
+	for i in range(1, (len(files) + PAGE_SIZE - 1)// PAGE_SIZE + 1):
 
 		f = open(dest+"/page{}.md".format(i), "w")
 
@@ -40,7 +39,7 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 		f.write("---\n\n")
 
 		# where j is the index of the image to write to the page
-		for j in range((i-1) * PAGE_SIZE, -1+(i-1) * PAGE_SIZE + PAGE_SIZE):
+		for j in range((i-1) * PAGE_SIZE, (i-1) * PAGE_SIZE + PAGE_SIZE):
 			if j >= len(files): continue
 			# print(j)
 			f.write('<a href="{{ "'+files[j]+'" | relative_url}}">\n')

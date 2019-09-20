@@ -22,3 +22,7 @@ order: 1
 	<img class="img-fluid" src="{{ "static/zuko/the_dragon_dance___zuko_minimalist_wallpaper_by_damionmauville_dbenfzd.png" | relative_url}}" alt="Demo Image">
 </a>
 
+<a href="{{ "static/zuko/the_avatar_and_the_firelord_minimalist_wallpaper_by_damionmauville_dbew1q0.png" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/zuko/the_avatar_and_the_firelord_minimalist_wallpaper_by_damionmauville_dbew1q0.png" | relative_url}}" alt="Demo Image">
+</a>
+

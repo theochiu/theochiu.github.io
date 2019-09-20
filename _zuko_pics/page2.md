@@ -22,3 +22,7 @@ order: 2
 	<img class="img-fluid" src="{{ "static/zuko/Avatar-The-Last-Airbender-Prince-Zuko-minimalism-simple-background-anime-boys-1224670-wallhere.com.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
+<a href="{{ "static/zuko/329564.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/zuko/329564.jpg" | relative_url}}" alt="Demo Image">
+</a>
+

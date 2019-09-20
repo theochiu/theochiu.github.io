@@ -22,3 +22,7 @@ order: 3
 	<img class="img-fluid" src="{{ "static/pics/cloudstrife.png" | relative_url}}" alt="Demo Image">
 </a>
 
+<a href="{{ "static/pics/IMG_0097.JPG" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/IMG_0097.JPG" | relative_url}}" alt="Demo Image">
+</a>
+
