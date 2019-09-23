@@ -12,7 +12,7 @@ def get_pics(path):
 			files.append(file)
 	
 	full_list = [os.path.join(path,i) for i in files]
-	files = sorted(full_list, key=os.path.getmtime)
+	files = sorted(full_list, key=os.path.getctime)
 	# pprint(files)
 	return files[::-1]
 
@@ -52,7 +52,7 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 
 if __name__ == '__main__':
 	make_html("static/pics", "_pictures")
-	make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
-	make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
+	# make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
+	# make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
 	print("success")
 	# pprint(get_pics("static/zuko"))
