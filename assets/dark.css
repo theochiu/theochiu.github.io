@@ -4,12 +4,17 @@
 		background-color: #2d2e2d;
 	}
 
-	.post-preview * , .darkenize, #projects{
+	.post-preview * , .darkenize, #projects {
 		color: white ;
 	}
 
-	h3, h4, h5, p {
+	h1, h2, h3, h4, h5, p, tr, code span{
 		opacity: 85;
+		color: white;
+	}
+
+	.text-muted {
+		color: #a3ada3 !important
 	}
 
 	hr {
