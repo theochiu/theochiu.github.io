@@ -1,0 +1,24 @@
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #2d2e2d;
+	}
+
+	.post-preview * , .darkenize, #projects{
+		color: white ;
+	}
+
+	h3, h4, h5, p {
+		opacity: 85;
+	}
+
+	hr {
+		border-color: #525252;
+		opacity: .93;
+	}
+
+	a {
+		color: #64afff;
+	}
+
+}
