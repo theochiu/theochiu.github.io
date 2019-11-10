@@ -17,6 +17,10 @@
 		opacity: .93;
 	}
 
+	footer a {
+		color: black;
+	}
+
 	a {
 		color: #64afff;
 	}
