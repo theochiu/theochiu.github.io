@@ -6,7 +6,7 @@ background: '/static/pagepics/snowy_ece.jpg'
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="margin-bottom: 0px; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead change-background" style="margin-bottom: 0px;background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
 
 	{% else %}
 	<header class="masthead">
@@ -22,7 +22,7 @@ background: '/static/pagepics/snowy_ece.jpg'
 
 						<span class="subheading">
 							<p >
-							<mark style="background-color: #6ba3db; color: white;">
+							<mark style="background-color: #6ba3db; color: white; padding:0;">
 								I'm <strong>Theodore Chiu</strong>, a Computer Engineer.
 								<br>
 								I love engineering, music, and cars.
