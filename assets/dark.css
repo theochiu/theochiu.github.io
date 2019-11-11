@@ -8,7 +8,7 @@
 		color: white ;
 	}
 
-	h1, h2, h3, h4, h5, p, tr, code span{
+	h1, h2, h3, h4, h5, p, tr, code span {
 		opacity: 85;
 		color: white;
 	}
@@ -64,7 +64,7 @@
 	}
 
 	header.change-background {
-		background-image: url("../static/pics/stars.jpg") !important
+		background-image: url("../static/pagepics/stars.jpg") !important
 	}
 
 	mark {
