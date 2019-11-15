@@ -1,8 +1,5 @@
 User-agent: *
 Disallow: /server
 Disallow: /datetrix
-Disallow: /assets
 Disallow: /cs159
-Disallow: /static
-Disallow: /pictures
 Disallow: /ricepurity
