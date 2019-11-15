@@ -16,7 +16,9 @@
 title: Theodore Chiu
 email: theochiu.me@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to the personal site of Theodore Chiu. View my portfolio, projects, and blog!
+  Official site of Theodore Chiu.
+  I'm a Computer Engineering student at Purdue University. 
+  View my portfolio, projects, and blog!
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
