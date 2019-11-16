@@ -46,9 +46,9 @@
 		border-bottom: none;
 	}
 
-	#mainNav .navbar-toggler {
+	.navbar-light .navbar-toggler {
 		border-color: rgba(255, 255, 255, 0.2);
-		border-bottom: 1px;
+		/*border-bottom: 1px;*/
 	}
 
 	@media only screen and (min-width: 992px) {
