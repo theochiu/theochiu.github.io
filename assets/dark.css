@@ -39,8 +39,20 @@
 	{
 		background-color: #2d2e2d;
 		color: white;
+		/*border-bottom: none;*/
+	}
+
+	#mainNav {
 		border-bottom: none;
 	}
+
+	#mainNav .navbar-toggler {
+		border-color: rgba(255, 255, 255, 0.2);
+		border-bottom: 1px;
+	}
+
+
+
 
 	@media only screen and (min-width: 992px) {
 		#mainNav *, 
