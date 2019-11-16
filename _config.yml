@@ -57,10 +57,10 @@ collections:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - pic_gen.py 
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - pic_gen.py 
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
