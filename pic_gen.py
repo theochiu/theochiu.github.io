@@ -19,6 +19,9 @@ def get_pics(path):
 def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 	files = get_pics(path)
 
+	# REVERSE
+	# files = files[::-1]
+
 	if os.path.isdir(dest):
 		shutil.rmtree(dest)
 		os.mkdir(dest)
