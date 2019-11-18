@@ -1,5 +1,1 @@
 User-agent: *
-Disallow: /server
-Disallow: /datetrix
-Disallow: /cs159
-Disallow: /ricepurity
