@@ -30,6 +30,20 @@ url: "https://theochiu.github.io" # the base hostname & protocol for your site, 
 # seo
 google_verify: "iqRKLLByekDpDrdCu-40SA0fIN_kdNcud8IHZ7JP6lI"
 google_analytics: "UA-106177437-1"
+keywords:
+  [
+    "theochiu",
+    "theo chiu",
+    "theodore chiu",
+    "theochiu98",
+    "theodore purdue",
+    "theodore palo alto",
+    "coding",
+    "programming",
+    "program",
+    "system",
+    "software"
+  ]
 
 # social
 github_username: theochiu

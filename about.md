@@ -3,6 +3,7 @@ layout: page
 title: About
 description: 
 background: '/static/pagepics/guitar.jpg'
+keywords: [about, bio, music, cars, photos, photography, pictures, pics]
 ---
 
 Thanks for visiting my page! In addition to my engineering exploits I also thoroughly enjoy 
