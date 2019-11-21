@@ -8,12 +8,12 @@ keywords:
 
 <div class=container id="top"></div>
 
-<div class="container" id="main">
+<div class="container darkenize" id="main">
 	<h3>
 		Debug
 	</h3>
 
-	<ul class="debug">
+	<ul class="debug darkenize">
 		<li class=debug id="user_agent">User-agent:</li>
 		<li class=debug id="ip">ip address</li>
 	</ul>
@@ -58,6 +58,12 @@ keywords:
 	}
 	tr:nth-child(even) {
 		background-color: #dddddd;
+	}
+	@media (prefers-color-scheme: dark) {	
+		tr:nth-child(even) {
+			background-color: #525252;
+			opacity: .93;
+		}
 	}
 
 </style>
