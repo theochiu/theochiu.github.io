@@ -1,0 +1,95 @@
+---
+layout: default
+title: debug
+description: debugger
+background:
+keywords:
+---
+
+<div class=container id="top"></div>
+
+<div class="container" id="main">
+	<h3>
+		Debug
+	</h3>
+
+	<ul class="debug">
+		<li class=debug id="user_agent">User-agent:</li>
+		<li class=debug id="ip">ip address</li>
+	</ul>
+
+	<table id="iptable">
+		
+	</table>
+
+</div>
+
+<style type="text/css">
+	.debug, .debug * {
+		/*font: Courier New;*/
+		font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+		font-size: 17px;
+	}
+	ul.debug {
+		list-style-type: none;
+		padding-inline-start: 0;
+	}
+	li.debug {
+		margin-bottom: 15px;
+	}
+	#top {
+		height: 100px;
+		background-color: rgba(0,0,0,0.7);
+		/*width: 70%;*/
+	}
+	#main {
+		margin-top:13px;
+		width: 70%;
+	}
+	#iptable {
+		width: 75%;
+		font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+		font-size: 15px;
+	}
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript">
+
+	$("#user_agent").html("<b>user agent:</b> " + navigator.userAgent);
+
+	var ipaddr;
+	$.getJSON("https://jsonip.com?callback=?", function(data) {
+		$("#ip").html("<b>ip address:</b> " + data.ip);
+		ipaddr = data.ip
+
+		$.getJSON("https://ipapi.co/" + ipaddr + "/json", function(data) {
+
+		var str = JSON.stringify(data);
+		var json = JSON.parse(str);
+
+		var table = $("#iptable")
+		var rows = "";
+
+		for (key in json) {
+			console.log(key + ": " + json[key])
+			if (key != "ip")
+				rows += "<tr>	<td><b>" + key + "</b></td><td>" +json[key] + "	</td></tr>"
+		}
+
+		$("#iptable").append(rows);
+		
+		});
+	});
+		
+
+</script>
