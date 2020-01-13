@@ -1,0 +1,109 @@
+---
+layout: default
+title: Instagram downloader
+description: debugger
+background:
+keywords:
+---
+
+<div class=container id="top"></div>
+
+<div class="container darkenize" id="main">
+	<h3>
+		Instagram file download tool
+	</h3>
+
+	<ul class="debug darkenize">
+		<br>
+		<li class=debug id="user_agent">
+			Enter URL:
+			<input type="text" id="ig_url" size="40">
+		</li>
+
+		<li class=debug id="ip">
+			Paste cookie:
+			<input type="text" id="ig_cookie" size="40">
+		</li>
+
+		<li>
+			<sub>*paste the "sessionid" cookie</sub>
+		</li>
+
+		<br>
+
+		<li>
+			<button type="button" onclick="get_files()">Get files!</button>
+		</li>
+	</ul>
+
+
+	<br>
+	<h4>fetch results:</h4>
+
+	<textarea id="source_output" disabled>lorem ipsum temp temp temp...</textarea>
+
+	
+
+</div>
+
+<style type="text/css">
+	.debug, .debug * {
+		/*font: Courier New;*/
+		font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+		font-size: 17px;
+	}
+	ul.debug {
+		list-style-type: none;
+		padding-inline-start: 0;
+	}
+	li.debug {
+		margin-bottom: 15px;
+	}
+	#top {
+		height: 100px;
+		background-color: rgba(0,0,0,0.7);
+		/*width: 70%;*/
+	}
+	#main {
+		margin-top:13px;
+		width: 70%;
+	}
+	#iptable {
+		width: 75%;
+		font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+		font-size: 15px;
+	}
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	@media (prefers-color-scheme: dark) {	
+		tr:nth-child(even) {
+			background-color: #525252;
+			opacity: .93;
+		}
+	}
+	textarea {
+		width: 100%;
+		height: 500px;
+	}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript">
+
+	// $("#user_agent").html("<b>user agent:</b> " + navigator.userAgent);
+
+	function get_files() {
+		console.log("url: " + $("#ig_url").val())
+		console.log("cookie: " + $("#ig_cookie").val())
+	}
+
+	
+
+</script>
