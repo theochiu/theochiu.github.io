@@ -100,8 +100,21 @@ keywords:
 	// $("#user_agent").html("<b>user agent:</b> " + navigator.userAgent);
 
 	function get_files() {
-		console.log("url: " + $("#ig_url").val())
-		console.log("cookie: " + $("#ig_cookie").val())
+		// let url = $("#ig_url").val()
+		// let cookie = $("#ig_cookie").val()
+
+		// hardcoded test cases
+		var url = "https://www.instagram.com/p/B3htwX1ApncKZckX5NSWz5HyxVHBTu-sF2vQVM0/";
+		var cookie = "145087976%3ASymrCL5ZxyDV7i%3A10";
+
+		const Http = new XMLHttpRequest();
+		Http.open("GET", url);
+		Http.send();
+
+		Http.onreadystatechange = (e) => {
+			resp = Http.responseText
+			$("#source_output").val(resp);
+		}
 	}
 
 	
