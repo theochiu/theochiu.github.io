@@ -4,17 +4,53 @@ import os, shutil
 PAGE_SIZE = 5
 IMG_EXT = [".gif", ".jpg", ".jpeg", ".png", ".bmp"]
 
+def change_names(files, path):
+	''' takes list of file names starting with oldest and ending with the 
+		newest. Then changes names of each file to numbers with 1 being
+		the oldest and the highest number being the newest. Then returns
+		a list of the same order but with renamd file names. Some files might
+		already be numbered '''
+
+	name_num = 1 
+	i = 0
+	names = [(os.path.split(file)[1]) for file in files]
+	file_dict = {os.path.splitext(file)[0]: os.path.splitext(file)[1] for file in names}
+	res = []
+
+	# populate res with already numbered files
+	# remove this files fomr names
+	this_name = str(name_num)
+	while this_name in file_dict:
+		res.append(this_name + file_dict[this_name])
+		names.remove(this_name + file_dict[this_name])
+		name_num += 1
+		this_name = str(name_num)
+
+	while names:
+		this_name = str(name_num)
+		root, ext = os.path.splitext(names[i])
+		os.rename(os.path.join(path, names[i]), os.path.join(path, this_name + ext))
+		name_num += 1
+		res.append(this_name)
+		names.remove(names[i])
+
+	return [os.path.join(path, file) for file in res]
+
 def get_pics(path):
 	files = []
+
+	# populate list of images
 	for file in os.listdir(path):
-		_, ext = os.path.splitext(file)
+		root, ext = os.path.splitext(file)
 		if ext.lower() in IMG_EXT:
 			files.append(file)
 	
 	full_list = [os.path.join(path,i) for i in files]
-	files = sorted(full_list, key=os.path.getctime)
-	# pprint(files)
-	return files[::-1]
+	reversed_files = sorted(full_list, key=os.path.getctime)				# ordered newest last
+
+	reversed_files = change_names(reversed_files, path)
+
+	return reversed_files[::-1]		# reverse the order
 
 def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 	files = get_pics(path)
@@ -59,3 +95,5 @@ if __name__ == '__main__':
 	# make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
 	print("success")
 	# pprint(get_pics("static/zuko"))
+
+
