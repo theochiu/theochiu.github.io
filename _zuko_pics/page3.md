@@ -6,7 +6,7 @@ author: "Theodore Chiu"
 order: 3
 ---
 
-<a href="{{ "static/zuko/329543.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/zuko/329543.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/zuko/1.png" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/zuko/1.png" | relative_url}}" alt="Demo Image">
 </a>
 
