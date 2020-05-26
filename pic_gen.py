@@ -18,7 +18,7 @@ def change_names(files, path):
 	res = []
 
 	# populate res with already numbered files
-	# remove this files fomr names
+	# remove this files from names
 	this_name = str(name_num)
 	while this_name in file_dict:
 		res.append(this_name + file_dict[this_name])
