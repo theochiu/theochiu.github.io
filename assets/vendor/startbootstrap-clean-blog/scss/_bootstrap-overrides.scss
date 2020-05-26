@@ -25,3 +25,12 @@
   font-size: 16px;
   padding: 25px 35px;
 }
+
+// Theo's custom tweaks
+
+@media (min-width: 992px) {
+  .col-lg-8 {
+    flex:0 0 68%;
+    max-width: 68%;
+  }
+}
