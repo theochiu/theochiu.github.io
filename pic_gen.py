@@ -90,8 +90,8 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 
 
 if __name__ == '__main__':
-	make_html("static/pics", "_pictures")
-	# make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
+	# make_html("static/pics", "_pictures")
+	make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
 	# make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
 	print("success")
 	# pprint(get_pics("static/zuko"))
