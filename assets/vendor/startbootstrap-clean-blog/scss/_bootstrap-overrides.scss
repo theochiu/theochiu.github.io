@@ -34,3 +34,15 @@
     max-width: 68%;
   }
 }
+
+// dynamic font size
+p.frontpage {
+  font-size: calc(12px + (25 - 12) * ((30vw + 70vh - 100px) / (1600 - 100)  ));
+  line-height: calc(.5em + ( - .5) * ((30vw + 70vh - 100px)/(1600 - 100)));
+  // line-height: calc(.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+
+}
+
+h1.frontpage {
+  font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;
+}
