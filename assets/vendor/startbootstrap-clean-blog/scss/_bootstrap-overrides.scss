@@ -46,3 +46,18 @@ p.frontpage {
 h1.frontpage {
   font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;
 }
+
+// push down container border to push down footer
+div.container {
+  padding-bottom: 40px;
+}
+
+// adjust image size on frontpage
+.container.frontpage {
+  // padding-bottom: calc(40px + (40px - 10px) * (100vh - 0) / 500px);
+
+  padding-bottom: calc(40px + (40 - 10) * (100vh - 500px) / 1200);
+
+
+  // padding-bottom: calc(40px + 4px)
+}

@@ -11,3 +11,28 @@ footer {
     text-align: center;
   }
 }
+
+// Theo's custom tweaks
+/* sticky footer css overrides */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 130px;
+  line-height: 40px; /* Vertically center the text there */
+  padding: 8px;
+  padding-top: 45px;
+  /*background-color: #981f1f;*/
+
+}
+.copyright {
+  margin: 6px;
+}
