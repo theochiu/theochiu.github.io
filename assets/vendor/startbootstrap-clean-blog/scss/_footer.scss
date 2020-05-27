@@ -26,13 +26,17 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 130px;
+  height: 104px;
   line-height: 40px; /* Vertically center the text there */
   padding: 8px;
-  padding-top: 45px;
-  /*background-color: #981f1f;*/
-
+  padding-top: 20px;
+  background-color: #ffffff;
 }
 .copyright {
   margin: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: #2d2e2d;
+  }
 }
