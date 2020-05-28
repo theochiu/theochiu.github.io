@@ -50,3 +50,5 @@ All images are owned and taken by **[Theodore Chiu](/)**
     <img class="img-fluid" src="{{ "/static/pics/45.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
+Like what you see? Here's [more]({{ "pictures/page1.html" | relative_url }})
+
