@@ -26,7 +26,8 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 104px;
+  height: 104px;     // old height 
+  // height: 60px;
   line-height: 40px; /* Vertically center the text there */
   padding: 8px;
   padding-top: 20px;
@@ -38,5 +39,11 @@ footer {
 @media (prefers-color-scheme: dark) {
   footer {
     background-color: #2d2e2d;
+  }
+}
+
+@media only screen and (max-height: 764px) {
+  footer {
+    padding-top: 10px;
   }
 }
