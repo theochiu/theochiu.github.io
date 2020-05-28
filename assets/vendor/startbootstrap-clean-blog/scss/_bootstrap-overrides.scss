@@ -27,13 +27,6 @@
 }
 
 // Theo's custom tweaks
-
-img.prof {
-  border-radius: 60%; 
-  width: 90%; 
-  max-width: 400px;
-}
-
 @media (min-width: 992px) {
   .col-lg-8 {
     flex:0 0 68%;
@@ -50,6 +43,17 @@ p.frontpage {
 
 h1.frontpage {
   font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;
+}
+
+@media only screen and (max-height: 650px){
+  img.prof {
+    border-radius: 60%; 
+    width: 90%; 
+    max-width: 285px;
+  }
+  p.frontpage {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-height: 650px) {
