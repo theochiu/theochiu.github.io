@@ -65,7 +65,7 @@ h1.frontpage {
   // adjust image size on frontpage
   .container.frontpage {
     // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-    padding-bottom: calc(40px + (168 - 40) * ((1vh - 7.52px) / (9.69 - 7.52)));
+    padding-bottom: calc(35px + (168 - 40) * ((1vh - 7.52px) / (9.69 - 7.52)));
     margin-bottom: 2px;
   }
 
