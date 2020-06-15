@@ -1,0 +1,95 @@
+I"&<p>This site now has dark mode! Toggle the switch for dark mode on your device and watch as the colors/images change!</p>
+
+<h3 id="history">History</h3>
+<p>Ever since macOS Catalina came out, dark mode has gaining popularity on apps and websites. From google chrome, to 
+twitter’s homepage, developers have been updating their user interfaces to support dark mode. It’s all a part of
+a new trend in UIUX - a return the simple, the elegent. A departure from convoluted and crowded web pages to
+minimalist web design, and with the newest web and most current web standards it’s easier to incorporate than ever</p>
+
+<h3 id="implementation">Implementation</h3>
+<p>Now more than ever, web developers have a lot of easy ways to design responsive, sleek, minimal websites. 
+JQuery leverages Javacsript’s DOM model with a minimal amount of typing. Media queries allow adaptive CSS to 
+render nicely on all devices regardless of display size. And with the newest standard of media query level 5, 
+developers can specify dark mode vs light mode.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="c">/* Light mode */</span>
+	<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">light</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nt">body</span> <span class="p">{</span>
+			<span class="nl">background-color</span><span class="p">:</span> <span class="m">#FFF</span><span class="p">;</span>
+			<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="c">/* Dark mode */</span>
+	<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nt">body</span> <span class="p">{</span>
+			<span class="c">/*background-color: hsl(100, 2%, 9%);*/</span>
+			<span class="nl">background-color</span><span class="p">:</span> <span class="m">#2d2e2d</span><span class="p">;</span>
+			<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+			<span class="nl">opacity</span><span class="p">:</span> <span class="m">.87</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="nt">hr</span> <span class="p">{</span>
+			<span class="nl">border-color</span><span class="p">:</span> <span class="m">#525252</span><span class="p">;</span>
+			<span class="nl">opacity</span><span class="p">:</span> <span class="m">.93</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+</code></pre></div></div>
+<p><span class="caption text-muted">
+	<a href="https://theochiu.github.io/datetrix" target="_blank">
+		CSS for DateTrix
+	</a>
+</span></p>
+
+<h3 id="styles">Styles</h3>
+<p>One of the golden rules of dark mode design is never choose black. A black background tends to be too harsh
+for users (especially with modern OLED true black screens) and most people will agree that a gray or a softer color
+is preferable to ease the strain on the eyes. Another important rule is true white is usually also too harsh. An easy
+way to mellow out the white is change it to a shade of gray, or modify the opacity (see snipet above).</p>
+
+<h3 id="how-i-did-it">How I did it</h3>
+<p>I’m sure as you can tell, the CSS that drives this sight is very long. My strategy for developing a dark mode meant
+just overriding certain aspects of classes in a separate file. For the most part CSS addresses things that stay
+the same across dark mode, namely: font, font size, element location, etc. The only thing I have a desire to change
+are the colors. Using Chrome’s debugging tool, I was able to find exactly what classes I needed to modify and simply override
+them in a separate file, taking care to not touch anything that needed to stay the same, and then wrapping the modified
+classes in a single media query of <code class="language-plaintext highlighter-rouge">@media (prefers-color-scheme: dark)</code> this way, light mode is just whatever
+CSS I had before.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nt">body</span> <span class="p">{</span>
+		<span class="nl">background-color</span><span class="p">:</span> <span class="m">#2d2e2d</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.post-preview</span> <span class="o">*</span> <span class="o">,</span> <span class="nc">.darkenize</span><span class="o">,</span> <span class="nf">#projects</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="no">white</span> <span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">p</span><span class="o">,</span> <span class="nt">tr</span><span class="o">,</span> <span class="nt">code</span> <span class="nt">span</span><span class="p">{</span>
+		<span class="nl">opacity</span><span class="p">:</span> <span class="m">85</span><span class="p">;</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.text-muted</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="m">#a3ada3</span> <span class="cp">!important</span>
+	<span class="p">}</span>
+	<span class="nt">hr</span> <span class="p">{</span>
+		<span class="nl">border-color</span><span class="p">:</span> <span class="m">#525252</span><span class="p">;</span>
+		<span class="nl">opacity</span><span class="p">:</span> <span class="m">.93</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nt">footer</span> <span class="nt">a</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nt">a</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="m">#64afff</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is also immensely helpful since the CSS isn’t written in one huge file. Some of it is imported from bootstrap
+and other different libraries and then compiled together from scss partials. You obviously can’t change directly
+change classes that are imported from a cloudflare server so this is the best way to get a dark mode without 
+re-writing all your CSS (which can be thousands of lines long)</p>
+
+<p><a href="/static/posts/dark_light.jpg">
+    <img class="img-fluid" src="/static/posts/dark_light.jpg" alt="Demo Image" />
+</a>
+<span class="caption text-muted">Dark/Light mode juxtaposed</span></p>
+
+<p>Interested in the full CSS? Check it out <a target="_blank" href="/assets/dark.css">here</a>!</p>
+:ET
