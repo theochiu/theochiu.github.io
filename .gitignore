@@ -5,7 +5,7 @@
 /_site/
 .jekyll-metadata
 Gemfile.lock
-.jekyll-cache/
+# .jekyll-cache/
 
 # webstorm
 .idea/
