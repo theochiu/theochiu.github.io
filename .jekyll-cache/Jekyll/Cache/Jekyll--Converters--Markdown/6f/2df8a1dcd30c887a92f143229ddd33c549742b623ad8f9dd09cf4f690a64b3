@@ -1,0 +1,30 @@
+I"F<h2 id="résumés">Résumés</h2>
+<p>Everybody wants to have a great resume. It’s what gets you hired, it’s what gets you a raise, and in 
+a sense, it can make or break a career. Now when it comes to resumes, there’s two main things to
+worry about. First the content, and second the presentation. No doubt I believe that everyone
+should work and study hard and do their best to get the best career related experiences in order
+to better their skillsets, but I believe that very often recruiters and managers get turned off
+not by the content, but by the presentation.</p>
+
+<p>Just like the website you want to close out of, most resume’s are densely packed, difficult to read,
+small lettered documents that you just want to put down and stop reading. My solution is a <em>dynamic
+site</em> that has <em>amazing</em> UI with <mark style="background-color:yellow !important;">bright colors</mark> complementing a dark background.</p>
+
+<h2 id="its-dynamic">It’s dynamic</h2>
+<p>If you’re like me, your resume’s constantly changing. From new experiences to new skills, my 
+resume is always growing and I try my best to keep it up to date. Unfortunately given that the 
+websites are written in html updating that could cause a lot of trouble.</p>
+
+<p>A fun workaround I created was to use jekyll’s liquid templating engine to create variables
+in a <code class="language-plaintext highlighter-rouge">config.yml</code>. With this setup, anytime I want to update my resume I can simply change
+the variables, run the engine, and the html updates! Even the spacing and sizing is built in,
+so adding a lot of text in one section won’t cause overlap or crowding of any kind.</p>
+
+<p>This also means that others can clone the repository and change all the variables
+to make it their own. The true halmark of open source web design! For comedic effect
+I even made a fake version of the website featuring 
+<a href="https://theochiu.github.io/resume-site/michael/">Michael Scott</a> from the hit TV show,
+“The Office”.</p>
+
+<p><a href="http://github.com/theochiu/resume-site">source code for resume-site</a></p>
+:ET

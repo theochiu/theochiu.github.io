@@ -27,7 +27,6 @@
 }
 
 // Theo's custom tweaks
-
 @media (min-width: 992px) {
   .col-lg-8 {
     flex:0 0 68%;
@@ -37,23 +36,54 @@
 
 // dynamic font size
 p.frontpage {
-  font-size: calc(12px + (25 - 12) * ((30vw + 70vh - 100px) / (1600 - 100)  ));
-  line-height: calc(.5em + ( - .5) * ((30vw + 70vh - 100px)/(1600 - 100)));
-  // line-height: calc(.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-
+  font-size: calc(12px + (25 - 12) * ((100vh - 100px) / (1600 - 100)  ));
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 h1.frontpage {
   font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;
 }
 
-// push down container border to push down footer
-div.container {
-  padding-bottom: 40px;
+@media only screen and (max-height: 650px){
+  img.prof {
+    border-radius: 60%; 
+    width: 90%; 
+    max-width: 285px;
+  }
+  p.frontpage {
+    font-size: 16px;
+  }
 }
 
-// adjust image size on frontpage
-.container.frontpage {
-  padding-bottom: calc(40px + (40 - 10) * (100vh - 500px) / 1200);
-  // padding-bottom: 40px
+@media only screen and (min-height: 650px) {
+  // push down container border to push down footer
+  div.container {
+    padding-bottom: 40px;
+  }
+
+  // adjust image size on frontpage
+  .container.frontpage {
+    // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+    padding-bottom: calc(35px + (168 - 40) * ((1vh - 7.52px) / (9.69 - 7.52)));
+    margin-bottom: 2px;
+  }
+
+  // front page image
+  img.prof {
+    border-radius: 60%; 
+    // width: 90%; 
+    // max-width: 400px;
+    height: calc(285px + (360 - 285) * ((120vh - 700px) / (969 - 700)));
+    width: calc(285px + (360 - 285) * ((120vh - 700px) / (969 - 700)));
+  }
 }
+
+// media query 745px height set margin bottom 40
+@media only screen and (max-height: 745px) {
+  .container.frontpage {
+    padding-bottom: 45px
+  }
+}
+
+
