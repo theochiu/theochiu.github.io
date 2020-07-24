@@ -6,6 +6,14 @@ author: "Theodore Chiu"
 order: 5
 ---
 
+<a href="{{ "static/pics/28.JPG" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/28.JPG" | relative_url}}" alt="Demo Image">
+</a>
+
+<a href="{{ "static/pics/27.JPG" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/27.JPG" | relative_url}}" alt="Demo Image">
+</a>
+
 <a href="{{ "static/pics/26.JPG" | relative_url}}">
 	<img class="img-fluid" src="{{ "static/pics/26.JPG" | relative_url}}" alt="Demo Image">
 </a>
@@ -16,13 +24,5 @@ order: 5
 
 <a href="{{ "static/pics/24.jpeg" | relative_url}}">
 	<img class="img-fluid" src="{{ "static/pics/24.jpeg" | relative_url}}" alt="Demo Image">
-</a>
-
-<a href="{{ "static/pics/23.jpeg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/23.jpeg" | relative_url}}" alt="Demo Image">
-</a>
-
-<a href="{{ "static/pics/22.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/22.jpg" | relative_url}}" alt="Demo Image">
 </a>
 

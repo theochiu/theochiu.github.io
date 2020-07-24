@@ -17,6 +17,7 @@ def change_names(files, path):
 	file_dict = {os.path.splitext(file)[0]: os.path.splitext(file)[1] for file in names}
 	res = []
 
+
 	# populate res with already numbered files
 	# remove this files from names
 	this_name = str(name_num)
@@ -26,12 +27,13 @@ def change_names(files, path):
 		name_num += 1
 		this_name = str(name_num)
 
+	# deal with the new files (recently changed names)
 	while names:
 		this_name = str(name_num)
 		root, ext = os.path.splitext(names[i])
 		os.rename(os.path.join(path, names[i]), os.path.join(path, this_name + ext))
 		name_num += 1
-		res.append(this_name)
+		res.append(this_name + ext)
 		names.remove(names[i])
 
 	return [os.path.join(path, file) for file in res]
@@ -91,7 +93,7 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 
 if __name__ == '__main__':
 	make_html("static/pics", "_pictures")
-	#make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
+	# make_html("static/zuko", "_zuko_pics", "/static/pagepics/zuko_back.jpg")
 	# make_html("static/car_pics", "_car_pics", "/static/pagepics/bmw2002.jpeg")
 	print("success")
 	# pprint(get_pics("static/zuko"))
