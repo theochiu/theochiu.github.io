@@ -8,8 +8,8 @@
 
 </head>
 <body>
-	<div class="container">
-		<div style="padding:60px;padding-bottom:10px">
+	<div class="container-fluid">
+		<div>
 			<h1 class="display-3">
 				Links
 			</h1>
@@ -50,6 +50,22 @@
 
 </body>
 <style type="text/css">
+	@media (min-width: 1400px) {
+		.container-fluid {
+			max-width: 67%;
+		}
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		.container-fluid {
+			max-width: 75%;
+		}
+	}
+	@media (max-width: 1199px) {
+		.container-fluid {
+			max-width: 90%;
+		}
+	}
+	
 	.footer {
 		position: absolute;
 		bottom: 0;
