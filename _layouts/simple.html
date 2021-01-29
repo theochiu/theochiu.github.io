@@ -41,18 +41,32 @@
 		</div>
 	</main>
 
-<script>
-	var refTagger = {
-		settings: {
-			bibleVersion: "ESV",
-		}
-	};
-	(function(d, t) {
-		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-		g.src = "https://api.reftagger.com/v2/RefTagger.js";
-		s.parentNode.insertBefore(g, s);
-	}(document, "script"));
-</script>
+	<hr>
+	<footer class="container-fluid">
+		<div class="row">
+		  <div class="col-6 col-md">
+			<h5>Navigation</h5>
+			<ul class="list-unstyled text-small">
+			  <li><a class="text-muted" href="{{"/" | relative_url }}">Main</a></li>
+			  <li><a class="text-muted" href="{{"/links" | relative_url }}">Links</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </footer>
+
+
+	<script>
+		var refTagger = {
+			settings: {
+				bibleVersion: "ESV",
+			}
+		};
+		(function(d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			g.src = "https://api.reftagger.com/v2/RefTagger.js";
+			s.parentNode.insertBefore(g, s);
+		}(document, "script"));
+	</script>
 
 
 <style type="text/css">
@@ -102,6 +116,7 @@
 			opacity: .93;
 		}
 	}
+
 </style>
 
 </body>
