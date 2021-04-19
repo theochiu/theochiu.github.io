@@ -6,23 +6,23 @@ author: "Theodore Chiu"
 order: 1
 ---
 
-<a href="{{ "static/pics/48.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/48.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/pics/60.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/60.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
-<a href="{{ "static/pics/47.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/47.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/pics/59.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/59.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
-<a href="{{ "static/pics/46.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/46.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/pics/58.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/58.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
-<a href="{{ "static/pics/45.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/45.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/pics/57.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/57.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
-<a href="{{ "static/pics/44.jpg" | relative_url}}">
-	<img class="img-fluid" src="{{ "static/pics/44.jpg" | relative_url}}" alt="Demo Image">
+<a href="{{ "static/pics/56.jpg" | relative_url}}">
+	<img class="img-fluid" src="{{ "static/pics/56.jpg" | relative_url}}" alt="Demo Image">
 </a>
 
