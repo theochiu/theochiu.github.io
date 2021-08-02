@@ -83,9 +83,9 @@ def make_html(path, dest, background="/static/pagepics/beach_cam.jpg"):
 		for j in range((i-1) * PAGE_SIZE, (i-1) * PAGE_SIZE + PAGE_SIZE):
 			if j >= len(files): continue
 			# print(j)
-			f.write('<a href="{{ "'+files[j]+'" | relative_url}}">\n')
+			f.write('<p style="text-align:center;"><a href="{{ "'+files[j]+'" | relative_url}}">\n')
 			f.write('\t<img class="img-fluid" src="{{ "' +files[j]+'" | relative_url}}" alt="Demo Image">\n')
-			f.write('</a>\n\n')
+			f.write('</a></p>\n\n')
 
 		f.close()
 
