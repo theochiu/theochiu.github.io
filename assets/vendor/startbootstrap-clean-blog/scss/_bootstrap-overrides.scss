@@ -41,6 +41,15 @@ p.frontpage {
   margin-bottom: 0px;
 }
 
+// font override for fira for code
+@font-face {
+  font-family: "fira";
+  src: url(/assets/FiraCode-Regular.ttf);
+}
+code {
+  font-family: "fira", monospace;
+}
+
 h1.frontpage {
   font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;
 }

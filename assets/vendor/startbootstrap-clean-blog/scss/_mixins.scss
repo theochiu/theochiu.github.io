@@ -60,9 +60,17 @@
   -o-background-size: cover;
   background-size: cover;
 }
+@font-face {
+  font-family: "tiempos";
+  src: url(/assets/TiemposText-Regular.otf);
+}
+@font-face {
+  font-family: "gelion";
+  src: url(/assets/LouisGeorgeCafe.ttf);
+}
 @mixin serif-font() {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "tiempos", serif;
 }
 @mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "gelion", sans-serif;
 }
