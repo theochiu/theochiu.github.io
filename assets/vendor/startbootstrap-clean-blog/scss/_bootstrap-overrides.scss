@@ -48,11 +48,9 @@ p.frontpage {
 }
 code {
   font-family: "fira", monospace;
+  font-size: 11pt !important;
 }
-pre {
-  color: #e83e8c;
-  font-size: .8em;
-}
+
 
 h1.frontpage {
   font-size: calc(45px + (80 - 45) * ((20vw + 80vh - 300px) / (1600 - 100))) !important;

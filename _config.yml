@@ -65,7 +65,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
+# debug port
 port: 3000
+
+# pygments syntax highlighting
+highlight_theme: monokai
 
 # custom collections 
 collections:
