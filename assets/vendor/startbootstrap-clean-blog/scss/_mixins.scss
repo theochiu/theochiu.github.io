@@ -65,12 +65,12 @@
   src: url(/assets/TiemposText-Regular.otf);
 }
 @font-face {
-  font-family: "gelion";
+  font-family: "LGC";
   src: url(/assets/LouisGeorgeCafe.ttf);
 }
 @mixin serif-font() {
   font-family: "tiempos", serif;
 }
 @mixin sans-serif-font() {
-  font-family: "gelion", sans-serif;
+  font-family: "LGC", sans-serif;
 }
