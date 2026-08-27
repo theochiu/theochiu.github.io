@@ -42,20 +42,19 @@ keywords:
     "programming",
     "program",
     "system",
-    "software"
+    "software",
   ]
 
 # social
 github_username: theochiu
-facebook_username: theochiu98
+# facebook_username: theochiu98
 linkedin_username: theochiu
 instagram_username: theochiu98
 strava_id: 128704189
 
-
 # paginator
-paginate:           5
-paginate_path:      "/posts/page:num/"
+paginate: 5
+paginate_path: "/posts/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -71,7 +70,7 @@ port: 3000
 # pygments syntax highlighting
 highlight_theme: monokai
 
-# custom collections 
+# custom collections
 collections:
   zuko_pics:
     output: true
@@ -86,7 +85,7 @@ collections:
 # exclude:
 #   - Gemfile
 #   - Gemfile.lock
-#   - pic_gen.py 
+#   - pic_gen.py
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
